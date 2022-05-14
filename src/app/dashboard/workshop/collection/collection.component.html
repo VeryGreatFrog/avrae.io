@@ -101,8 +101,8 @@
         <!-- subscriptions -->
         <div class="meta-subscriptions">
           <p>
-            Added by <b>{{collection.num_subscribers}}</b> people
-            and <b>{{collection.num_guild_subscribers}}</b> servers
+            Added by <b>{{collection.num_subscribers}}</b> {{ collection.num_subscribers == 1 ? 'person' : 'people' }}
+            and <b>{{collection.num_guild_subscribers}}</b> {{ collection.num_guild_subscribers == 1 ? 'server' : 'servers' }}
           </p>
         </div>
 
